@@ -21,6 +21,7 @@
 			}
 			else
 			{
+				$this -> db -> limit(12);
 				$query = $this -> db -> get('products');
 			}
 

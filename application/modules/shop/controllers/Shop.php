@@ -16,8 +16,9 @@
 
 		public function Index()
 		{
+			$data['products'] = $this -> product_model -> get();
 			$this -> load -> view('templates/header');
-			$this -> load -> view('index');
+			$this -> load -> view('index', $data);
 			$this -> load -> view('templates/footer');
 		}
 
